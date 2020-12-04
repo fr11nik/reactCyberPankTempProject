@@ -1,0 +1,49 @@
+body{
+  font-family: 'JetBrains Mono';
+}
+h1,h2,h3,p{
+  padding: 0;
+  margin: 0;
+}
+h1{
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.img_logo{
+  display: flex;
+  justify-content: center;
+}
+#item-gb{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+.card-wrapper{
+  width: 30%;
+  height: fit-content;
+  background-color:#FEED0A;
+  margin: 0 auto;
+  transition: transform .3s ease-in-out;
+  transform: scale(0.99);
+}
+.card-wrapper__inner{
+  padding: 10px;
+}
+.card-wrapper__inner p {
+  font-weight: 300;
+}
+.card-wrapper::after{
+  content: "";
+  background: url('https://www.cyberpunk.net/build/images/home/razor-bottom-yellow-d44fb6b7.svg') no-repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -29px;
+  height: 30px; 
+}
+
